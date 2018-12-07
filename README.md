@@ -15,6 +15,8 @@
 
 > Check out the [GraphQL documentation](https://graphql.github.io/learn/) first!
 
+### Queries
+
 **Using the movie title:**
 
 ```graphql
@@ -41,7 +43,7 @@
 }
 ```
 
-### Options:
+### Fields:
 
 #### Title
 
@@ -180,6 +182,12 @@ Website of the movie
 Returns: `boolean`
 
 Check, if there was a response from OMDb
+
+## TODO
+
+* [ ] Deploy a demo using now
+* [ ] Change some options, so that they will return number instead of a string
+* [ ] Refractor the code
 
 ### License 
 
