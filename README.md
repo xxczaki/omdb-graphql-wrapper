@@ -2,6 +2,9 @@
 
 > Easily use [OMDb API](http://www.omdbapi.com/) with [GraphQL](https://graphql.org/) :rocket:
 
+
+**[Demo :wrench:](https://omdb-graphql.now.sh)**
+
 ## Setup a server:
 
 1. Clone this repository
@@ -179,15 +182,9 @@ Website of the movie
 
 #### Response
 
-Returns: `boolean`
+Returns: `string`
 
 Check, if there was a response from OMDb
-
-## TODO
-
-* [ ] Deploy a demo using now
-* [ ] Change some options, so that they will return number instead of a string
-* [ ] Refractor the code
 
 ### License 
 

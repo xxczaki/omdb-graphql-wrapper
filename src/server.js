@@ -1,12 +1,30 @@
+import {readFileSync} from 'fs';
+import {join} from 'path';
 import express from 'express';
-import {ApolloServer} from 'apollo-server-express';
+import {ApolloServer, gql} from 'apollo-server-express';
 import compression from 'compression';
-import schema from './schemas';
+
+import get from './api';
+import config from './config';
+
+const resolvers = {
+	Query: {
+		ByTitle: (root, {title}) => get(title, '&t=').then(payload => {
+			return payload;
+		}),
+		ByID: (root, {id}) => get(id, '&i=').then(payload => {
+			return payload;
+		})
+	}
+};
 
 // Configure Apollo GraphQL Server
 const server = new ApolloServer({
-	schema,
-	playground: true
+	typeDefs: gql(readFileSync(join(__dirname, './schema.graphql')).toString()), resolvers,
+	playground: true,
+	engine: {
+		apiKey: config.apollo
+	}
 });
 
 const app = express();
