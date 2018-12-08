@@ -5,7 +5,7 @@
 ## Setup a server:
 
 1. Clone this repository
-2. Run `npm installl`
+2. Run `npm install`
 3. Get the OMDb API key and paste it in the [`config.json`](https://github.com/xxczaki/omdb-graphql-wrapper/blob/master/src/config.json) file
 4. Run `npm run dev` to start the server in the development mode
 5. Go to [localhost:2121](http://localhost:2121/) and play with the GraphQL Playground
