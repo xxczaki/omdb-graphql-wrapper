@@ -5,6 +5,8 @@
 
 **[Demo :wrench:](https://omdb-graphql.now.sh)**
 
+---
+
 ## Setup a server:
 
 1. Clone this repository
