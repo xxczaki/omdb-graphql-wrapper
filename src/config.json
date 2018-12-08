@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
     "key": "OMDB_API_KEY",
     "apollo": "APOLLO_SERVICE_KEY"
 }
+=======
+    "key": "API_KEY"
+}
+>>>>>>> 5691b11c1d8c78342db067d3b0ab8c5821364902
